@@ -1,0 +1,120 @@
+﻿{% extends "app/layout.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<header>
+                    <!--БАННЕР-->
+                    <section id="banner">
+                         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="{% static 'app/content/img/banner.png'%} " alt="Первый слайд" class="img-responsive" />
+
+                                    <div class="carousel-caption" role="option">
+
+                                        <p>
+                                            <h2>Сайт, где всё о дизайне!</h2>
+                                            <p>
+                                               <h3>Веб-дизайн • Графический дизайн • Дизайн интерьера • Индустриальный (промышленный) дизайн • Дизайн одежды • Арт дизайн • Экодизайн</h3>
+                                            </p>
+
+                                        </p>
+
+            </div>
+                                </div>
+
+                                <div class="item">
+                                    <img src="{% static 'app/content/img/banner2.png'%}" alt="Второй слайд"  class="img-responsive" />
+                                </div>
+
+                                <div class="item">
+                                    <img src="{% static 'app/content/img/banner3.png'%}" alt="Третий слайд"  class="img-responsive" />
+                                </div>
+                            </div>
+
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+                    </section>
+</header>
+            <!--КАТЕГОРИИ-->
+            <section id="gallery">
+		        <div class="container">
+			        <div class="title1">
+				        <h2>
+					        Категории
+				        </h2>
+				        <p>
+					        Выберите подходящую категорию
+				        </p>
+			        </div>
+			        <div class="works clearfix">
+				        <figure class="photo-description">
+				        <img src="../static/app/content/img/img1.jpg" alt="Работа">
+				        <figcaption>
+					        <h3>WEB-дизайн</h3>
+					        <p>Статьи о веб-дизайне, которые помогут сделать ваш сайт уникальным и модным.</p>
+					        <a href="#"></a>
+				        </figcaption>
+				        </figure>
+				        <figure class="photo-description">
+				        <img src="../static/app/content/img/img2.jpg" alt="Работа">
+				        <figcaption>
+					        <h3>Выпадающее меню</h3>
+					        <p>Шаблоны выпадающего меню для сайта, выполненные с применением HTML и CSS</p>
+					        <a href="#"></a>
+				        </figcaption>
+				        </figure>
+				        <figure class="photo-description">
+				        <img src="../static/app/content/img/img3.jpg" alt="Работа">
+				        <figcaption>
+					        <h3>Кнопки</h3>
+					        <p>Коллекция красивых кнопок для сайта на разную тематику.</p>
+					        <a href="#"></a>
+				        </figcaption>
+				        </figure>
+
+				        <figure class="photo-description">
+				        <img src="../static/app/content/img/img4.jpg" alt="Работа">
+				        <figcaption>
+					        <h3>CSS фишки</h3>
+					        <p>Различные красивости для оформления сайта, о которых вы возможно и не подозревали.</p>
+					        <a href="#"></a>
+				        </figcaption>
+				        </figure>
+				        <figure class="photo-description">
+				        <img src="../static/app/content/img/img5.jpg" alt="Работа">
+				        <figcaption>
+					        <h3>Parallax эффект</h3>
+					        <p>Благодаря применению такого эффекта ваш сайт будет казаться объёмным. Очень красиво смотрится.</p>
+					        <a href="#"></a>
+				        </figcaption>
+				        </figure>
+				        <figure class="photo-description">
+				        <img src="../static/app/content/img/img6.jpg" alt="Работа">
+				        <figcaption>
+					        <h3>Дизайн идеи</h3>
+					        <p>Здесь собраны идеи оформления различных страниц, сайтов, кнопок, меню и прочего для вашего вдохновения.</p>
+					        <a href="#"></a>
+				        </figcaption>
+				        </figure>
+			        </div>
+		        </div>
+	        </section>
+
+{% endblock %}
