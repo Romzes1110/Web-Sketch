@@ -3,13 +3,15 @@
 {% block content %}
 
 <h2>{{ post_1.title }}</h2>
-
+<section id="blogpost">
 {% if post_1.image and post_1.image.url != '/media/temp.jpg' %}
     <img src="{{ post_1.image.url }}" alt="Картинка" width="300px" height="200px" />
 {% endif %}
 
 <p> {{post_1.content|linebreaksbr}} </p>    {# вывод текста по абзацам #}
 <hr />
+</section>
+
 <section id="sections">
     <div class="comments">
         <h2>Комментарии</h2>
